@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text|Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #424242;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+table,
+tr,
+th,
+td {
+  border-collapse: collapse;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c7b800;
+}
+
+td, th {
+  padding: 5px 10px;
+}

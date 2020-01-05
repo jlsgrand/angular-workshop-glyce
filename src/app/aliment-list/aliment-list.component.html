@@ -1,0 +1,46 @@
+<h2>Liste des aliments</h2>
+
+<section>
+  <h3>Formulaire d'ajout</h3>
+  <form [formGroup]="alimentForm" (ngSubmit)="onSubmit(alimentForm.value)">
+
+    <div class="form-field">
+      <label for="name">Nom de l'aliment</label>
+      <input id="name" type="text" formControlName="name">
+    </div>
+
+    <div class="form-field">
+      <label for="ig">Index Glycémique</label>
+      <input id="ig" type="number" min="0" max="200" step="1" formControlName="ig">
+    </div>
+
+    <div class="form-field">
+      <label for="carbs">Proportion de glucides (g/100g)</label>
+      <input id="carbs" type="number" min="0" max="100" step="0.1" formControlName="carbs">
+    </div>
+
+    <button class="button" type="submit">Ajouter</button>
+  </form>
+</section>
+
+<section>
+  <h3>Liste des aliments enregistrés</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nom de l'aliment</th>
+        <th>Index glycémique</th>
+        <th>Proportion de glucides (g/100g)</th>
+        <th>Supprimer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let aliment of aliments">
+        <td>{{ aliment.name }} </td>
+        <td>{{ aliment.ig }}</td>
+        <td>{{ aliment.carbs }}</td>
+        <td><button (click)="onDelete(aliment)">Supprimer</button></td>
+      </tr>
+  </table>
+</section>

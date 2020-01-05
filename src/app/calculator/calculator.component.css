@@ -1,0 +1,36 @@
+section {
+  background-color: rgb(106, 106, 106);
+  margin: 30px;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-field {
+  padding: 0 20px;
+}
+
+label {
+  padding-right: 5px;
+}
+
+strong {
+  font-size: 1.5em;
+}
+
+.low-load {
+  color: #4caf50;
+}
+
+.medium-load {
+  color: #ffb300;
+}
+
+.high-load {
+  color: #e53935;
+}

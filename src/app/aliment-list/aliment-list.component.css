@@ -1,0 +1,28 @@
+section {
+  background-color:rgb(106, 106, 106);
+  margin: 30px;
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 5px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+input {
+  min-width: 300px;
+}
+
+label {
+  min-width: 100px;
+}
