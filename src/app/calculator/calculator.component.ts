@@ -10,7 +10,7 @@ import { Portion } from '../model/portion.model';
 })
 export class CalculatorComponent implements OnInit {
 
-  aliments = this.dataService.aliments;
+  aliments = this.dataService.aliments; 
   portions: Portion[] = [];
 
   portionForm: FormGroup
